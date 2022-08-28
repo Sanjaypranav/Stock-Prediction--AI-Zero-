@@ -10,8 +10,6 @@ def add_a_day(startTime):
     startTime = startTime.replace(startTime.split('-')[2], str(date))
     return  startTime
 
-
-
 stockName = input("Enter stock name: ")
 
 startTime , endTime = add_a_day(input("Enter start time period: (year-month-date)(# date format = 2022-08-25): ")) , add_a_day(input("Enter end time period: (year-month-date)(# date format = 2022-08-25): "))
