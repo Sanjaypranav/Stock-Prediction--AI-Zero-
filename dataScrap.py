@@ -23,4 +23,4 @@ slidingWindow = input("Enter Sliding Window: (min): ") + 'm'
 data = yf.download(stockName, start = startTime, end = endTime, interval = slidingWindow)
 
 type(data)
-data.to_csv("Data/AAPL.csv")
+data.to_csv(f"{stockName}.csv")
