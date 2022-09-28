@@ -46,7 +46,7 @@ for i in range(5, len(test_data)):
 
 x_test = np.array(x_test)
 x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
-
+print(x_train.shape, y_train.shape, x_test.shape, y_test.shape)
 
 model = keras.Sequential()
 model.add(layers.LSTM(100, return_sequences=True, input_shape=(x_train.shape[1], 1)))
